@@ -1,0 +1,356 @@
+.emergency-page {
+  padding: 94px 16px 56px;
+  min-height: 100dvh;
+  height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-x: hidden;
+  background:
+    radial-gradient(1050px 360px at 10% -10%, rgba(255, 255, 255, 0.08), transparent 60%),
+    radial-gradient(850px 320px at 100% 0, rgba(255, 255, 255, 0.05), transparent 55%),
+    linear-gradient(150deg, #080808, #0e0e0e 45%, #151515);
+}
+
+.emergency-shell {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: 12px;
+  height: 100%;
+  min-height: 0;
+}
+
+.emergency-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #fff;
+}
+
+.emergency-header h3 {
+  margin: 0;
+}
+
+.emergency-close {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.emergency-search {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  padding: 11px 12px;
+}
+
+.emergency-preview-note {
+  margin: 0;
+  border-left: 3px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.emergency-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 12px;
+  min-height: 0;
+  height: 100%;
+  align-items: stretch;
+}
+
+.emergency-left-rail {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.33);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 10px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  max-height: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 136, 136, 0.8) transparent;
+}
+
+.emergency-left-rail::-webkit-scrollbar {
+  width: 8px;
+}
+
+.emergency-left-rail::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.65);
+  border-radius: 999px;
+}
+
+.emergency-left-rail h4 {
+  margin: 0;
+  font-size: 0.94rem;
+}
+
+.emergency-menu {
+  display: grid;
+  gap: 7px;
+}
+
+.emergency-menu button {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 8px 9px;
+}
+
+.emergency-menu-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.emergency-menu-label i {
+  font-style: normal;
+}
+
+.emergency-menu-label em {
+  font-style: normal;
+}
+
+.emergency-menu button strong {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.72rem;
+  padding: 2px 7px;
+}
+
+.emergency-menu button.is-active {
+  border-color: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.emergency-menu-hint {
+  margin: 0;
+  font-size: 0.82rem;
+  opacity: 0.9;
+}
+
+.emergency-rail-actions {
+  display: grid;
+  gap: 7px;
+}
+
+.emergency-rail-actions button {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 7px 10px;
+}
+
+.emergency-main {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 10px;
+  min-height: 0;
+  max-height: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(136, 136, 136, 0.8) transparent;
+}
+
+.emergency-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.emergency-main::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.65);
+  border-radius: 999px;
+}
+
+.emergency-section-title {
+  margin: 0;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emergency-quick-row {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.emergency-quick-card {
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 9px;
+  display: grid;
+  gap: 2px;
+}
+
+.emergency-quick-card strong {
+  font-size: 0.96rem;
+}
+
+.emergency-quick-card span {
+  font-size: 0.78rem;
+  opacity: 0.88;
+}
+
+.emergency-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.emergency-item {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.emergency-item p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+.emergency-item a {
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 11px;
+  white-space: nowrap;
+}
+
+.emergency-empty {
+  margin: 10px 0 0;
+  opacity: 0.86;
+}
+
+.emergency-guides {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.emergency-guide-card {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+
+.emergency-guide-card h5 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.emergency-guide-card ul {
+  margin: 9px 0 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.emergency-guide-card li {
+  font-size: 0.86rem;
+  line-height: 1.42;
+}
+
+.emergency-member-note {
+  margin: 0;
+  border-left: 3px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 7px 9px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .emergency-page {
+    height: auto;
+    overflow: visible;
+  }
+
+  .emergency-shell {
+    height: auto;
+    min-height: auto;
+  }
+
+  .emergency-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-left-rail,
+  .emergency-main {
+    max-height: none;
+    overflow: visible;
+    position: static;
+  }
+
+  .emergency-menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .emergency-guides {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .emergency-page {
+    padding: 82px 12px 44px;
+  }
+
+  .emergency-menu,
+  .emergency-quick-row {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

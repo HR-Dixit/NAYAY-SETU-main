@@ -1,0 +1,166 @@
+/* ========================================
+   HOW IT WORKS - PREMIUM DESIGN
+   ======================================== */
+
+.hiw-section {
+  width: min(1200px, 94%);
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.hiw-intro {
+  margin: 0 0 32px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hiw-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  position: relative;
+}
+
+/* Connecting line */
+.hiw-grid::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--accent) 20%, 
+    var(--accent) 80%, 
+    transparent 100%
+  );
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.hiw-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  position: relative;
+  z-index: 1;
+}
+
+.hiw-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-elevated), 0 0 20px var(--glow-gold);
+}
+
+.hiw-card-head {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hiw-step {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--accent);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  width: fit-content;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hiw-card h3 {
+  font-family: var(--font-heading);
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.hiw-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Note Box */
+.hiw-note {
+  margin-top: 24px;
+  border-left: 3px solid var(--accent);
+  padding: 16px 20px;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Example Box */
+.hiw-example {
+  margin-top: 20px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  padding: 20px 24px;
+}
+
+.hiw-example h4 {
+  font-family: var(--font-heading);
+  margin: 0 0 16px;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hiw-example p {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hiw-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .hiw-grid::before {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .hiw-section {
+    padding: 16px 0 32px;
+  }
+  
+  .hiw-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .hiw-card {
+    min-height: auto;
+    padding: 20px;
+  }
+}

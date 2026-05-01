@@ -1,0 +1,223 @@
+/* ========================================
+   FEEDBACK SECTION - PREMIUM DESIGN
+   ======================================== */
+
+.feedback-wrap {
+  width: min(1160px, 94%);
+  margin: 20px auto 0;
+  padding: 24px 0 40px;
+}
+
+.feedback-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 24px;
+}
+
+/* Reviews Side */
+.feedback-reviews {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  padding: 24px;
+}
+
+.feedback-summary {
+  border: 1px solid var(--border-subtle);
+  background: rgba(31, 31, 31, 0.6);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+  text-align: center;
+}
+
+.feedback-summary p {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.feedback-summary strong {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.feedback-summary span {
+  color: var(--accent);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.feedback-summary small {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.feedback-reviews h3 {
+  font-family: var(--font-heading);
+  margin: 20px 0 16px;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.feedback-empty {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 24px;
+}
+
+.feedback-review-list {
+  display: grid;
+  gap: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.feedback-review-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: rgba(31, 31, 31, 0.4);
+  padding: 16px;
+  transition: all var(--transition-base);
+}
+
+.feedback-review-card:hover {
+  border-color: var(--border-gold);
+}
+
+.feedback-review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.feedback-review-top strong {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.feedback-review-top span {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.feedback-review-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.feedback-review-card small {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Form Side */
+.feedback-form {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.feedback-form h3 {
+  font-family: var(--font-heading);
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.feedback-form p {
+  margin: -8px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(31, 31, 31, 0.6);
+  color: var(--text-primary);
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  transition: all var(--transition-base);
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.feedback-form button {
+  border: none;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: var(--text-inverse);
+  min-height: 52px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+}
+
+.feedback-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+}
+
+.feedback-notice {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4ade80;
+  text-align: center;
+  padding: 12px;
+  background: rgba(74, 222, 128, 0.1);
+  border-radius: var(--radius-md);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .feedback-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-review-list {
+    max-height: none;
+  }
+}

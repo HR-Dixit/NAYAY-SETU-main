@@ -1,0 +1,8 @@
+.line_design{
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #ffffff 0%, #d4d4d4 18%, #7e7e7e 45%, #1a1a1a 90%),
+                radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #e9e9e9 16%, #8f8f8f 46%, #111111 100%);
+
+}

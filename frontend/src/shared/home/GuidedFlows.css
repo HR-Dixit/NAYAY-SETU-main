@@ -1,0 +1,124 @@
+.guided-flow-wrap {
+  width: min(1200px, 94%);
+  margin: 16px auto 0;
+  color: #fff;
+}
+
+.guided-flow-wrap h3 {
+  margin: 0;
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
+}
+
+.guided-flow-wrap > p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1rem;
+}
+
+.guided-flow-tabs {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.guided-flow-tabs button {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 7px 11px;
+}
+
+.guided-flow-tabs button.active {
+  background: #fff;
+  color: #101010;
+}
+
+.guided-flow-card {
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 12px;
+}
+
+.guided-flow-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.guided-flow-head h4 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.guided-flow-head p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1rem;
+}
+
+.guided-flow-head span {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.guided-flow-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.guided-flow-grid strong {
+  font-size: 1rem;
+}
+
+.guided-flow-grid ol,
+.guided-flow-grid ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.guided-flow-card > button {
+  margin-top: 12px;
+  border: none;
+  border-radius: var(--radius-full);
+  min-height: 42px;
+  padding: 0 20px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: var(--text-inverse);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+}
+
+.guided-flow-card > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 760px) {
+  .guided-flow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guided-flow-head {
+    flex-direction: column;
+  }
+}

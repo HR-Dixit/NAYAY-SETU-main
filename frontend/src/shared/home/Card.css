@@ -1,0 +1,124 @@
+/* ========================================
+   CARD - PREMIUM DESIGN
+   ======================================== */
+
+.flip-card {
+  width: 100%;
+  max-width: 260px;
+  min-height: 280px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  transform: translateY(0);
+  box-shadow: var(--shadow-card);
+}
+
+.flip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-elevated), 0 0 30px var(--glow-gold);
+  border-color: var(--border-gold);
+}
+
+.flip-card-front {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.flip-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(31, 31, 31, 0.8);
+  padding: 10px;
+  border: 2px solid var(--border-subtle);
+  transition: all var(--transition-base);
+}
+
+.flip-card:hover img {
+  border-color: var(--accent);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.flip-card-front h2 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.flip-card-front p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* Premium Button */
+.btn-grad {
+  min-width: 140px;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 12px 24px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: var(--text-inverse);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+}
+
+.btn-grad:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+  border-color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .flip-card {
+    max-width: 100%;
+    min-height: 260px;
+  }
+
+  .flip-card-front {
+    gap: 12px;
+    padding: 20px 16px;
+  }
+
+  .flip-card-front h2 {
+    font-size: 1.15rem;
+  }
+
+  .flip-card-front p {
+    font-size: 0.85rem;
+  }
+
+  .btn-grad {
+    min-width: 130px;
+    min-height: 40px;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+  }
+}

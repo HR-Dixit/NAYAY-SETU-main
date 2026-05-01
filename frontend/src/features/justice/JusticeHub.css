@@ -1,0 +1,346 @@
+.justice-page {
+  background: linear-gradient(180deg, #f4f8fc 0%, #ecf2fa 100%);
+  min-height: calc(100vh - 76px);
+  padding: 96px 16px 26px;
+}
+
+.justice-shell {
+  width: min(1180px, 98%);
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #dce6f4;
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(22, 46, 90, 0.08);
+  padding: 18px;
+  color: #142d53;
+}
+
+.justice-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.justice-header h3 {
+  margin: 0;
+  color: #0f2342;
+}
+
+.justice-header p {
+  margin: 6px 0 0;
+  color: #41587f;
+}
+
+.justice-close {
+  border: 1px solid #c0d4ef;
+  background: #f2f7ff;
+  color: #12315f;
+  border-radius: 10px;
+  font-weight: 700;
+  min-height: 40px;
+  padding: 0 14px;
+}
+
+.justice-policy-banner {
+  margin: 12px 0 0;
+  background: #fff7e3;
+  border: 1px solid #f3d99a;
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: #5c430e;
+  font-size: 0.95rem;
+}
+
+.justice-tabs {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.justice-tabs button {
+  border: 1px solid #d4e2f6;
+  border-radius: 999px;
+  background: #f6f9ff;
+  color: #1a365f;
+  min-height: 34px;
+  padding: 0 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.justice-tabs button.is-active {
+  background: #194587;
+  border-color: #194587;
+  color: #fff;
+}
+
+.justice-panel {
+  margin-top: 14px;
+  border: 1px solid #e1eaf7;
+  border-radius: 12px;
+  padding: 14px;
+  background: #fcfdff;
+  color: #183761;
+}
+
+.justice-panel p,
+.justice-panel li,
+.justice-panel span,
+.justice-panel label {
+  color: #2d4f7d;
+}
+
+.justice-panel strong {
+  color: #16345f;
+}
+
+.justice-form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.justice-form-grid input,
+.justice-form-grid textarea,
+.justice-form-grid select {
+  border: 1px solid #ccdbf2;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 8px 10px;
+  background: #fff;
+  color: #18355f;
+}
+
+.justice-form-grid input::placeholder,
+.justice-form-grid textarea::placeholder {
+  color: #6883a8;
+}
+
+.justice-form-grid select option {
+  color: #18355f;
+  background: #fff;
+}
+
+.justice-form-grid textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.justice-form-grid button,
+.justice-inline-actions button,
+.justice-link-btn {
+  border: 1px solid #2a4f8a;
+  background: #2a4f8a;
+  color: #fff;
+  border-radius: 10px;
+  min-height: 36px;
+  padding: 0 12px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.justice-inline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.justice-inline-actions button:nth-child(2),
+.justice-item-row .justice-inline-actions button {
+  background: #f2f6ff;
+  color: #1e3a66;
+}
+
+.justice-error {
+  margin: 0;
+  color: #9b1d1d;
+  font-weight: 700;
+}
+
+.justice-ok {
+  margin: 0;
+  color: #146935;
+  font-weight: 700;
+}
+
+.justice-warn {
+  margin: 0;
+  color: #9b1d1d;
+  font-weight: 700;
+}
+
+.justice-route-output {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.justice-route-output ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.justice-route-output p,
+.justice-route-output li {
+  color: #284a77;
+}
+
+.justice-service-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.justice-service-card {
+  border: 1px solid #d7e3f6;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.justice-service-card strong {
+  color: #15365f;
+}
+
+.justice-service-card p {
+  margin: 0;
+  color: #3d5476;
+  font-size: 0.9rem;
+}
+
+.justice-service-card a {
+  color: #183d77;
+  font-weight: 700;
+}
+
+.justice-service-meta {
+  font-size: 0.82rem !important;
+}
+
+.justice-service-card .ok {
+  color: #146935;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.justice-service-card .warn {
+  color: #9b1d1d;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.justice-form-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.justice-list-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.justice-list-card {
+  border: 1px solid #d6e3f7;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.justice-list-card h4,
+.justice-form-grid h4,
+.justice-panel h4,
+.justice-panel h5 {
+  margin: 0;
+  color: #162f55;
+}
+
+.justice-item-row {
+  border: 1px solid #e4ecf9;
+  border-radius: 9px;
+  background: #f9fbff;
+  padding: 8px;
+  display: grid;
+  gap: 5px;
+}
+
+.justice-item-row p {
+  margin: 0;
+  color: #41587d;
+  font-size: 0.88rem;
+}
+
+.justice-item-row pre {
+  margin: 0;
+  white-space: pre-wrap;
+  border: 1px solid #d6e2f7;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+  font-size: 0.8rem;
+  color: #1d3558;
+}
+
+.justice-item-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #193b6b;
+}
+
+.justice-login-box {
+  border: 1px dashed #b8cae6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #f7faff;
+  display: grid;
+  gap: 8px;
+}
+
+.justice-login-box p,
+.justice-meta-line {
+  margin: 0;
+  color: #395680;
+}
+
+@media (max-width: 1020px) {
+  .justice-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .justice-form-layout,
+  .justice-list-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .justice-page {
+    padding: 86px 10px 20px;
+  }
+
+  .justice-shell {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .justice-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .justice-service-grid {
+    grid-template-columns: 1fr;
+  }
+}

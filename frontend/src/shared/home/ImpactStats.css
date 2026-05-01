@@ -1,0 +1,78 @@
+/* ========================================
+   IMPACT STATS - PREMIUM DESIGN
+   ======================================== */
+
+.impact-wrap {
+  width: min(1200px, 94%);
+  margin: 32px auto 0;
+  padding: 24px 0 40px;
+}
+
+.impact-intro {
+  margin: -10px auto 28px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.impact-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--surface-card);
+  backdrop-filter: blur(12px);
+  padding: 28px 20px;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-elevated), 0 0 20px var(--glow-gold);
+}
+
+.impact-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.impact-card span {
+  display: block;
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 980px) {
+  .impact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  
+  .impact-card {
+    padding: 20px 16px;
+  }
+}
