@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://hrdixit.github.io/NAYAYSETU-Main/",
   "scripts": {
     "dev": "vite --config vite.config.js",
     "server": "node backend/server/index.js",
@@ -12,7 +13,9 @@
     "lint": "eslint .",
     "check": "npm run lint && npm run build",
     "preview": "vite preview --config vite.config.js",
-    "test:api": "node backend/scripts/api-smoke.mjs"
+    "test:api": "node backend/scripts/api-smoke.mjs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/playfair-display": "^5.2.8",
@@ -22,6 +25,7 @@
     "dotenv": "^16.6.1",
     "express": "^5.2.1",
     "framer-motion": "^12.35.1",
+    "gh-pages": "^6.3.0",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.1.0",
     "react": "^19.1.1",
